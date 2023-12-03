@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.kata;
+package org.sample.bdd.tdd.kata.evenodd;
 
 import org.junit.Assert;
 import org.junit.Test;

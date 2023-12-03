@@ -61,4 +61,17 @@ public class CourseTest {
         //with Assert class
 //        assertThrows(RuntimeException.class, () -> courseTestBuilder.withTuition(0).build());
     }
+
+    @Test
+    public void section_shouldReturnList_IsNotNullOrEmpty(){
+        int id=1;
+        String sectionName="tdd section";
+        Section section=new Section(id,sectionName);
+        CourseTestBuilder builder=new CourseTestBuilder();
+        Course course=builder.build();
+        List<Section> sections=new ArrayList<>();
+        sections.add(section);
+        course.setSections(sections);
+        assertThat(sections).isEqualTo(course.getSections());
+    }
 }

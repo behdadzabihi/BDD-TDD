@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.kata;
+package org.sample.bdd.tdd.kata.fizzbuzz;
 
 import java.util.ArrayList;
 import java.util.List;

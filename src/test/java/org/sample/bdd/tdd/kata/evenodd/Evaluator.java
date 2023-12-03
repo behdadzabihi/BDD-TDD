@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.kata;
+package org.sample.bdd.tdd.kata.evenodd;
 
 public class Evaluator {
 
