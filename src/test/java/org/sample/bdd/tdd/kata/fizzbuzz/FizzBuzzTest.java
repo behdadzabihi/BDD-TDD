@@ -20,7 +20,7 @@ public class FizzBuzzTest {
         int count = 100;
         FizzBuzz fizzBuzz = new FizzBuzz();
         List<String> actual = fizzBuzz.start(count);
-        Assert.assertEquals("Fizz", actual.get(3));
+        Assert.assertEquals("Fizz", actual.get(2));
     }
 
     @Test
