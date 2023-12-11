@@ -1,0 +1,14 @@
+org\sample\bdd\tdd\dip\GameBusiness.class
+org\sample\bdd\tdd\kata\fizzbuzz\FizzBuzzTest.class
+org\sample\bdd\tdd\course\SectionTest.class
+org\sample\bdd\tdd\dip\IGameDataAccess.class
+org\sample\bdd\tdd\kata\fizzbuzz\FizzBuzz.class
+org\sample\bdd\tdd\kata\evenodd\Evaluator.class
+org\sample\bdd\tdd\dip\ProgramApp.class
+org\sample\bdd\tdd\setupfixture\teardown\BeforeAndAfterAnnotationsUnitTest.class
+org\sample\bdd\tdd\course\Section.class
+org\sample\bdd\tdd\dip\GameDataAccess.class
+org\sample\bdd\tdd\course\CourseTestBuilder.class
+org\sample\bdd\tdd\kata\evenodd\EvaluatorTest.class
+org\sample\bdd\tdd\course\CourseTest.class
+org\sample\bdd\tdd\course\Course.class

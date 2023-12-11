@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.annotation;
+package org.sample.bdd.tdd.setupfixture.teardown;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
