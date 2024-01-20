@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.course;
+package org.sample.bdd.tdd.course.unit;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

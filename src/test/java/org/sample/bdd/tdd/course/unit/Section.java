@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.course;
+package org.sample.bdd.tdd.course.unit;
 
 public class Section {
 

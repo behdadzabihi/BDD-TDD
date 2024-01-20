@@ -1,9 +1,8 @@
-package org.sample.bdd.tdd.course;
-
-import org.junit.function.ThrowingRunnable;
+package org.sample.bdd.tdd.course.unit;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Course  {
     private int id;
@@ -14,6 +13,8 @@ public class Course  {
     private List<Section> sections;
 
 
+    public Course() {
+    }
 
     public Course(int id, String courseName, boolean isOnline, long tuition) {
         checkValidationForCourseName(courseName);
@@ -76,5 +77,21 @@ public class Course  {
 
     public void setSections(List<Section> sections) {
         this.sections = sections;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Course))
+            return false;
+
+        return ((Course) obj).getId() == this.id;
+    }
+
+    public void updateFromCreateCourse(CreateCourse createCourse) {
+        this.setId(createCourse.getId());
+        this.setCourseName(createCourse.getCourseName());
+        this.setOnline(createCourse.isOnline());
+        this.setTuition(createCourse.getTuition());
+        // Update other fields as needed
     }
 }

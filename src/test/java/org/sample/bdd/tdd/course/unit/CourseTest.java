@@ -1,6 +1,5 @@
-package org.sample.bdd.tdd.course;
-import org.checkerframework.checker.units.qual.C;
-import org.junit.Assert;
+package org.sample.bdd.tdd.course.unit;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,7 +9,6 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.Assert.*;
 
 public class CourseTest {
 
@@ -29,7 +27,7 @@ public class CourseTest {
         assertThat(courseName).isEqualTo(course.getCourseName());
         assertThat(isOnline).isEqualTo(course.isOnline());
         assertThat(tuition).isEqualTo(course.getTuition());
-        assertThat(sections).isEqualTo(course.getSections()).isEmpty();
+        Assertions.assertThat(sections).isEqualTo(course.getSections()).isEmpty();
     //with Assert class
 //        Assert.assertEquals(id,course.id);
 //        Assert.assertEquals(courseName,course.courseName);
@@ -72,6 +70,6 @@ public class CourseTest {
         List<Section> sections=new ArrayList<>();
         sections.add(section);
         course.setSections(sections);
-        assertThat(sections).isEqualTo(course.getSections());
+        Assertions.assertThat(sections).isEqualTo(course.getSections());
     }
 }

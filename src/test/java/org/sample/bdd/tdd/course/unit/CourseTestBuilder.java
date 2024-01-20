@@ -1,4 +1,4 @@
-package org.sample.bdd.tdd.course;
+package org.sample.bdd.tdd.course.unit;
 
 public class CourseTestBuilder {
 
@@ -20,6 +20,10 @@ public class CourseTestBuilder {
 
     public CourseTestBuilder withTuition(long tuition){
         this.tuition=tuition;
+        return this;
+    }
+    public CourseTestBuilder withId(int id) {
+        this.id=id;
         return this;
     }
 
