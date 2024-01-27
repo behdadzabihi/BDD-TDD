@@ -1,0 +1,9 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/student_db_test
+#    username: postgres
+#    password: behdad2012
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
