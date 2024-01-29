@@ -5,14 +5,13 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
 @AllArgsConstructor
-@NoArgsConstructor
 public class StudentServiceImpl implements StudentService {
 
-    @Autowired
     StudentRepository repository;
 
     @Override
@@ -41,6 +40,11 @@ public class StudentServiceImpl implements StudentService {
     public void deleteById(Long id) {
         findById(id);
         repository.deleteById(id);
+    }
+
+    @Override
+    public List<Student> findAll() {
+        return repository.findAll();
     }
 
 
